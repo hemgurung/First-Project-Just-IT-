@@ -1,0 +1,64 @@
+#mainC {
+    position: relative;
+    z-index: 1;
+}
+
+#mainC .bgImage {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(Content/cellphone.jpg) center/cover fixed;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+}
+
+.active {
+    opacity: 0.6;
+}
+
+.webBtn:hover, .socialBtn:hover, .emailBtn:hover, .appBtn:hover, .musicBtn:hover, .videoBtn:hover, #resultBtn:hover {
+    cursor:pointer;
+    opacity: 0.6;
+}
+
+.webSliderC, .socialSliderC, .emailSliderC, .appSliderC, .musicSliderC, .videoSliderC {
+    width: 100%; /* Width of the outside container */    
+}
+
+/* The slider itself */
+.webSlider, .socialSlider, .emailSlider, .appSlider, .musicSlider, .videoSlider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    width: 100%; /* Full-width */
+    height: 30px; /* Specified height */
+    background: #c0c0c0; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.6; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.webSlider:hover, .socialSlider:hover, .emailSlider:hover, .appSlider:hover, .musicSlider:hover, .videoSlider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.webSlider::-webkit-slider-thumb, .socialSlider::-webkit-slider-thumb, .emailSlider::-webkit-slider-thumb, .appSlider::-webkit-slider-thumb, .musicSlider::-webkit-slider-thumb, .videoSlider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 30px; /* Slider handle height */
+    background: #073763; /* Blue background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.webSlider::-moz-range-thumb, .socialSlider::-moz-range-thumb, .emailSlider::-moz-range-thumb, .appSlider::-moz-range-thumb, .musicSlider::-moz-range-thumb, .videoSlider::-moz-range-thumb {
+    width: 25px; 
+    height: 30px; 
+    background: #073763;
+    cursor: pointer;
+}
