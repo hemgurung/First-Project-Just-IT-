@@ -1,3 +1,3 @@
-# First-Project-Just-IT-
+# Mobile Data Calculator
 
-A simple Mobile Data Calculator
+A simple Web App created using HTML,CSS,JAVASCRIPT & JQUERY.
